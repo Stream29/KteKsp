@@ -1,4 +1,4 @@
-package io.github.stream29.simpleksp
+package io.github.stream29.kteksp
 
 import org.intellij.lang.annotations.Language
 

@@ -4,8 +4,8 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":simpleksp-annotation"))
-    ksp(project(":simpleksp-ksp"))
+    implementation(project(":kteksp-annotation"))
+    ksp(project(":kteksp-ksp"))
 }
 
 kotlin {

@@ -1,6 +1,5 @@
-package io.github.stream29.simpleksp
+package io.github.stream29.kteksp
 
-import com.google.devtools.ksp.processing.SymbolProcessorEnvironment
 import gg.jte.CodeResolver
 import gg.jte.ContentType
 import gg.jte.TemplateEngine

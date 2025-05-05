@@ -14,9 +14,9 @@ simpleKspModule("ksp")
 simpleKspModule("ksp-test")
 
 fun simpleKspModule(name: String) {
-    val prefix = "simpleksp-"
+    val prefix = "kteksp-"
     include(":$prefix$name")
     project(":$prefix$name").projectDir = file(name)
 }
 
-rootProject.name = "SimpleKsp"
+rootProject.name = "kteKsp"
