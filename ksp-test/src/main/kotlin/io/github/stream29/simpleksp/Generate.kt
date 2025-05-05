@@ -1,11 +1,14 @@
 @file:GenerateCode(
     packageName = "io.github.stream29.simpleksp",
-    fileName = "Generated",
+    fileName = "Generated$0",
     template =
 $$"""
+@file:GenerateCode(
+    packageName = "io.github.stream29.simpleksp",
+    fileName = "Generated$1",
+    template = ""
+)
 package io.github.stream29.simpleksp
-@for(i in 0..10)
-val num${i} = ${i}@endfor
 """
 )
 
