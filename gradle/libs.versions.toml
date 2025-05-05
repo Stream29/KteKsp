@@ -10,6 +10,5 @@ jte = { module = "gg.jte:jte", version.ref = "jte" }
 kte = { module = "gg.jte:jte-kotlin", version.ref = "jte" }
 
 [plugins]
-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
