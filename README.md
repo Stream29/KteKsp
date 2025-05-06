@@ -10,7 +10,19 @@ SimpleKsp is a Kotlin Symbol Processing (KSP) library that enables compile-time 
 ## Usage
 
 ### 1. Add the Dependency
+Gradle Kotlin DSL:
+```kotlin
+plugins {
+    id("com.google.devtools.ksp") version "<ksp version>"
+}
 
+dependencies {
+    compileOnly("io.github.stream29:kteksp-annotation:<version>")
+    ksp("io.github.stream29:kteksp-ksp:<version>")
+}
+```
+As KSP does not officially support Maven, we don't plan to support Maven.   
+If you still want to use this library with maven, please look at community KSP support of maven.
 
 ### 2. Annotate a File
 Use the `@file:GenerateCode` annotation at the top of a Kotlin file to specify generation parameters:
