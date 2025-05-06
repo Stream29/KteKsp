@@ -6,6 +6,7 @@ plugins {
 
 mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    coordinates((group as String), project.name, version.toString())
     signAllPublications()
     pom {
         name.set("KteKsp")
