@@ -8,4 +8,5 @@ kotlin {
 
 dependencies {
     implementation(libs.kotlin.jvm.plugin)
+    implementation(libs.maven.publish.plugin)
 }
