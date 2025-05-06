@@ -19,4 +19,4 @@ fun simpleKspModule(name: String) {
     project(":$prefix$name").projectDir = file(name)
 }
 
-rootProject.name = "kteKsp"
+rootProject.name = "KteKsp"

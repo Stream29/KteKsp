@@ -1,7 +1,23 @@
+@file:OptIn(ExperimentalKotlinGradlePluginApi::class)
+
+import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+
 plugins {
-    id("kotlin-jvm")
+    id("kotlin-multiplatform")
+    id("publish-convention")
 }
 
 kotlin {
     explicitApi()
+
+    applyDefaultHierarchyTemplate {
+        common {
+            group("noJvm") {
+                withNative()
+                withJs()
+                withWasmJs()
+                withWasmWasi()
+            }
+        }
+    }
 }

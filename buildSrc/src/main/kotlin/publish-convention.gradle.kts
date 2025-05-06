@@ -5,10 +5,6 @@ plugins {
 }
 
 mavenPublishing {
-    configure(KotlinJvm(
-        javadocJar = JavadocJar.Empty(),
-        sourcesJar = true
-    ))
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
     pom {

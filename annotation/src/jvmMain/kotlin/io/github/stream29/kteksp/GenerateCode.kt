@@ -12,8 +12,9 @@ import org.intellij.lang.annotations.Language
  * @property fileName The name of the generated file (without ".kt"). Supports template variables.
  * @property template The KTE template string used to generate the file content. Supports KTE syntax.
  */
+@Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
 @Target(AnnotationTarget.FILE)
-public annotation class GenerateCode(
+public actual annotation class GenerateCode(
     val packageName: String = "",
     val fileName: String = "",
     @Language("kte")
