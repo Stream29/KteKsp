@@ -1,6 +1,6 @@
 # SimpleKsp: KTE Template-based Code Generation with KSP
 
-SimpleKsp is a Kotlin Symbol Processing (KSP) library that enables compile-time code generation using [KTE](https://github.com/valich/intellij-kt-template) templates. It provides a simple annotation, `@GenerateCode`, to generate Kotlin source files based on template strings.
+SimpleKsp is a Kotlin Symbol Processing (KSP) library that enables compile-time code generation using [KTE (Part of JTE)](https://jte.gg) templates. It provides a simple annotation, `@GenerateCode`, to generate Kotlin source files based on template strings.
 
 ## Features
 - **KSP-based**: Fast, incremental code generation during compilation.
