@@ -1,5 +1,7 @@
 package io.github.stream29.kteksp
 
+import org.intellij.lang.annotations.Language
+
 /**
  * Annotation for generating Kotlin source files at compile time using KSP and KTE templates.
  *
@@ -11,4 +13,10 @@ package io.github.stream29.kteksp
  * @property template The KTE template string used to generate the file content. Supports KTE syntax.
  */
 @Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
-public expect annotation class GenerateCode
+@Target(AnnotationTarget.FILE)
+public annotation class GenerateCode(
+    val packageName: String = "",
+    val fileName: String = "",
+    @Language("kte")
+    val template: String,
+)

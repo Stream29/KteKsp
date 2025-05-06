@@ -9,15 +9,4 @@ plugins {
 
 kotlin {
     explicitApi()
-
-    applyDefaultHierarchyTemplate {
-        common {
-            group("noJvm") {
-                withNative()
-                withJs()
-                withWasmJs()
-                withWasmWasi()
-            }
-        }
-    }
 }
