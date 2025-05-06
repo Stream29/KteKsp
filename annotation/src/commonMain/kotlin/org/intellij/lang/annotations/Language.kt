@@ -1,6 +1,8 @@
 package org.intellij.lang.annotations
 
-@Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
+/**
+ * Hacking the original `org.intellij.lang.annotations.Language` annotation to support KMP.
+ */
 @Retention(AnnotationRetention.BINARY)
 @Target(
     AnnotationTarget.FUNCTION,
